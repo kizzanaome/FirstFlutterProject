@@ -6,6 +6,8 @@ import 'userConstructor.dart';
 //   runApp( Cohot1());
 // }
 
+
+
 class Cohot1 extends StatelessWidget {  Cohot1({super.key});  final String greetings = "hello";  // List<UserModel> modelsUser = [  //   UserModel(  //     userFirstName: 'Mbuga',  //     userLastName: 'Enoch',  //     userOtherName: 'Leisser',  //     gender: 'Male',  //     userAge: 2,  //     userId: 123,  //   )  // ];  @override  Widget build(BuildContext context) {    return MaterialApp(      home: Scaffold(        body: SizedBox(          height: MediaQuery.sizeOf(context).height,          width: MediaQuery.sizeOf(context).width,          child: Center(            child: TextWidget(userFirstName: 'Mbuga', greetings: "hello",dayWork: "how was your day"),          ),        ),      ),    );  }}
 
 // import 'package:flutter/material.dart';
