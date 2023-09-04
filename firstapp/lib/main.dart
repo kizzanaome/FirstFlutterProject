@@ -6,11 +6,12 @@
 
 // Create a home age that has a sized box with a child of a raw with 10 text widgets that have diferent texts
 // Create a HomePage that has a sizedBox with a child of a row, where the row has 10 Text widgets each having different text.
-
 // please explain the reused container once more, just peruse through for me. and also the export part
 
+// tosay goobye
+
 import 'package:flutter/material.dart';
-import 'package:firstapp/home_page.dart';
+import 'package:firstapp/assignment.dart';
 
 void main() {
   runApp(const MyApp());
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: const HomePage());
+    return const MaterialApp(home: HomePage());
     // return const Container();
   }
 }

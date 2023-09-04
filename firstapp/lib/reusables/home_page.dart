@@ -1,5 +1,8 @@
-import 'package:cohot2/reusable_widget.dart/Reused_container.dart';
 import 'package:flutter/material.dart';
+
+import '/reusables/Reused_container.dart';
+import 'blinking/blinkingTextWidget.dart';
+// import 'universal_exports.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -19,11 +22,25 @@ class _HomePageState extends State<HomePage> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
+              BlinkingText(
+                text: "Stephen",
+                size: 50,
+                color1: Colors.cyan,
+                color2: Colors.purple,
+              ),
               ReusedContainer(
                 defaultColor: Colors.blueAccent,
                 singleTapColor: Colors.greenAccent,
                 longPressColor: Colors.cyanAccent,
-                height: MediaQuery.sizeOf(context).height / 2,
+                height: MediaQuery.sizeOf(context).height / 4,
+                width: MediaQuery.sizeOf(context).width / 2,
+                radius: 20,
+              ),
+              ReusedContainer(
+                defaultColor: Colors.blueAccent,
+                singleTapColor: Colors.greenAccent,
+                longPressColor: Colors.cyanAccent,
+                height: MediaQuery.sizeOf(context).height / 4,
                 width: MediaQuery.sizeOf(context).width / 2,
                 radius: 20,
               ),
